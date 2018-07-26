@@ -30,4 +30,4 @@
 # $ ordenacao.exe nome_do_arquivo_de_instancias.txt
 #
 #
-
+# OBS: No windows verificar se tem o make instalado, por exemplo, CodeBlocks + MingW, deverá colocar o caminho "C:\Program Files (x86)\CodeBlocks\MinGW\bin" como variavel de ambiente no path, e fazer uma copia do arquivo mingw32-make para make.
