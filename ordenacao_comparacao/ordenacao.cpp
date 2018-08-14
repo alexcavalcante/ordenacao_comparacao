@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : Ordenação.cpp
+// Name        : ordenação.cpp
 // Author      : Alex Cavalcante
 // Copyright   : 2018.1
 // Description : Algoritmos de Ordenação
@@ -32,6 +32,8 @@ int main(int argc, char* argv[])
     cout << "\nMetodos de ordenacao Comparacao" << endl;
     cout << "(1) Selection Sort" << endl;
     cout << "(2) Insertion Sort" << endl;
+    cout << "(3) Quick Sort" << endl;
+    cout << "(4) Merge Sort" << endl;
     cout << "(0) Sair." << endl;
     cout << "Escolha um metodo de ordenacao: ";
     cin >> option;
@@ -50,6 +52,20 @@ int main(int argc, char* argv[])
         printArray(vetor);  //Mostra na tela
         insertionSort(vetor);
         cout << "\n Insertion sort:" << endl;
+        printArray(vetor);
+        break;
+    case 3:
+        cout << "\n Vetor original: " << endl;
+        printArray(vetor);  //Mostra na tela
+        quickSort(vetor,0,vetor.size());
+        cout << "\n Quick sort:" << endl;
+        printArray(vetor);
+        break;
+    case 4:
+        cout << "\n Vetor original: " << endl;
+        printArray(vetor);  //Mostra na tela
+        mergeSort(vetor,0,vetor.size());
+        cout << "\n Merge sort:" << endl;
         printArray(vetor);
         break;
     case 0:
