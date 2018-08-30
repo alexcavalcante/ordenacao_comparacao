@@ -6,8 +6,14 @@ endif
 
 all: $(TARGET)
 
-$(TARGET): selection.o ordenacao.o insertion.o
-	 g++ -o $(TARGET) selection.o ordenacao.o insertion.o mergesort.o quicksort.o
+$(TARGET): selection.o ordenacao.o insertion.o mergesort.o quicksort.o counting.o heapsort.o
+	 g++ -o $(TARGET) selection.o ordenacao.o insertion.o mergesort.o quicksort.o counting.o heapsort.o
+
+counting.o: counting.cpp
+	 g++ -std=c++14 -c counting.cpp
+
+heapsort.o: heapsort.cpp
+	 g++ -std=c++14 -c heapsort.cpp
 
 mergesort.o: mergesort.cpp
 	 g++ -std=c++14 -c mergesort.cpp
@@ -20,9 +26,9 @@ insertion.o: insertion.cpp
 
 selection.o: selection.cpp
 	 g++ -std=c++14 -c selection.cpp
- 
+
 ordenacao.o: ordenacao.cpp
-	 g++ -std=c++14 -c ordenacao.cpp
-     
+	 g++ -std=c++14 -c ordenacao.cp
+
 clean:
-	 rm selection.o mergesort.o quicksort.o ordenacao.o insertion.o $(TARGET)
+	 rm selection.o mergesort.o quicksort.o ordenacao.o insertion.o heapsort.o counting.o $(TARGET)

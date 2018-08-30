@@ -3,7 +3,8 @@
 #Implementação de Algoritmos de Ordenação
 #
 # Version: 1.0 (Insertion Sort e Selection Sort)
-# Version: 1.1 (Merge Sort e Quick Sort) (Acrescentado)
+# Version: 1.1 (Merge Sort e Quick Sort)
+# Version: 1.2 (Heap Sort e Counting Sort) (Acrescentado)
 #
 #No diretório raiz do projeto, use os seguintes comandos:
 #
